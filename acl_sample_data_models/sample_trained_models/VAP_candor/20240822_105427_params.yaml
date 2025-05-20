@@ -1,0 +1,52 @@
+device: cuda:1
+encoder_cfg:
+  audio_sample_rate: 16000
+  sample_rate: 50
+model_cfg:
+  d_ffn: 768
+  d_model: 256
+  d_out: 256
+  dff_k: 3
+  dropout_prob: 0.1
+  ffn_activation: GELU
+  mode: VAP
+  n_heads: 4
+  n_layers_cross: 3
+  n_layers_self: 1
+multimodal_model_cfg:
+  audio:
+    audio_sample_rate: 16000
+    d_ffn: 768
+    d_model: 256
+    n_heads: 4
+    n_layers_self: 1
+    sample_rate: 50
+    sequence_len: 1000
+  d_out: 256
+  dff_k: 3
+  dropout_prob: 0.1
+  ffn_activation: GELU
+  fuse_av:
+    d_model: 256
+    n_heads: 4
+    n_layers_cross: 3
+  fuse_speakers:
+    d_model: 256
+    n_heads: 4
+    n_layers_cross: 3
+  mode: VAP
+  video:
+    d_ffn: 174
+    d_model: 60
+    n_heads: 4
+    n_layers_self: 1
+    sequence_len: 600
+training_cfg:
+  batch_size: 32
+  flip_channel: 0.0
+  gradient_clip_val: 5
+  learning_rate: 0.001
+  lr_scheduler: false
+  mask_vad: 0
+  mask_vad_scale: 0.1
+  n_epochs: 10
