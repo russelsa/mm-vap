@@ -118,6 +118,100 @@ due to licencing restrictions, we cannot share the corpora (`turn-taking-project
 
 We have made all training and data preparation code available for use if you have independent licences to Candor corpora.
 
+
+# ACL 2025
+
+
+The following corpora are required for training and evaluation
+- Switchboard corpus 
+- Candor corpus 
+
+due to licencing restrictions, we cannot share the corpora (`turn-taking-projects` directory). If you have access to these corpora, training and validation sessions splits in `data_management/data_manager/assets/folds` and training can be run in `turn_taking_acl/training/training_scripts_multimodal.py`. Full instructions will be provided at a later stage. 
+
+Permission has been sought to share a sample of the Candor corpus for review (trimmed for filesize). 
+
+A sample scipt can be run to generate predictions from trained models.
+
+### OpenFace tracking
+<img src="images/openface_sample.gif" alt="drawing" width="400"/>
+
+
+### Sample multimodal turn-taking model output
+
+Candor early fusion model hold and shift prediction. VAP = probability of this speaker speaking in the next 600-2000 milliseconds. VAD = prediction of the current speaking activity, or voice activity detection. 
+
+<img src="images/shift.png" alt="drawing" width="400"/>
+Audio file:: `sample_data/shift.mp3`
+
+<img src="images/hold.png" alt="drawing" width="400"/>
+Audio file:: `sample_data/hold.mp3`
+
+
+
+## Running the sample code
+
+Create the conda environment and install the dependencies
+```
+conda create -n py312 python=3.12 pytorch torchvision torchaudio pytorch-cuda=12.4 -c pytorch -c nvidia -y
+conda activate py312
+conda env update --file environment.yml --prune
+```
+
+We have included five sample models in `sample_trained_models`. Each model is the checkpoint from the 10th epoch of the 1st fold of the relevant corpus. The models are:
+- `early_fusion_candor`
+- `late_fusion_candor`
+- `VAP_candor`
+- `VAP_switchboard_ASR`
+- `VAP_switchboard_ground_truth`
+- `candor_video_only`
+
+The sample code opens these models and loads in the pre-trained weights. 
+
+```
+python sample.py --model MODEL --start_time XXX --end_time YYY
+```
+
+The sample code obtains predictions for the Candor scenario in `sample_data` (unused during training) and produces traces of the model predictions in the range `start_time`, `end_time`, as shown below. 
+
+It is straightward to use a 16k stereo wav file of youtr choice for the VAP models, but early and late fusion models require OpenFace feature extraction from the video and feature processing steps. 
+
+
+## Requirements 
+
+We trained on two Nvidia RTX 6000 GPUs with Pytorch 2.5.0. Memory requirements vary per model. Model configurations are in the .yml files in `sample_trained_models`. 
+
+GPU memory requirements:
+- For training 33 GB GPU memory is required but can be reduced by lowering the batch size
+
+Hard-drive requirements:
+- The Switchboard corpus 57GB 
+- The Candor corpus 887GB 
+
+
+## Models
+
+Sample results on the Candor corpus: multimodal left (ours), audio-only right (VAP)
+<!-- ![alt text](turn_taking_acl/results/750ms_hold_shift_pred.png "Candor Multimodal (Ours)") -->
+<img src="turn_taking_acl/results/750ms_hold_shift_pred.png" alt="drawing" width="700"/>
+
+
+`turn_taking_acl/results` contain F1 and balanced accuracy for each fold of Candor and Switchboard
+
+#### Training objective 
+
+<!-- ![alt text](images/vap.png "Candor Multimodal (Ours)") -->
+<img src="images/vap.png" alt="drawing" width="400"/>
+
+
+#### Multimodal turn-taking 
+
+<!-- ![alt text](images/early_fusion.png "Candor Multimodal (Ours)") -->
+<img src="images/early_fusion.png" alt="drawing" width="400"/>
+
+## Data preparation and Training 
+
+We have made all training and data preparation code available for use if you have independent licences to Switchboard and Candor corpora.
+
 ## References
 
 ### Our submission 
@@ -129,11 +223,18 @@ Please cite the following publication:
     author = "Anoymous",
     booktitle = "Anonymous INTERSPEECH 2025 submission"
 }
+
+@inproceedings{anon_authors_multimodal_turntaking_2025,
+    title = "Visual Cues Enhance Predictive Turn-Taking for Two-Party Human Interaction",
+    author = "Anoymous",
+    booktitle = "Anonymous ACL 2025 submission"
+}
+
 ```
 
 ### VAP Model
 
-Stereo VAP Model (reimplementation of same used here)
+Stereo VAP Model (as used here)
 ```
 @inproceedings{inoue-etal-2024-multilingual,
     title = "Multilingual Turn-taking Prediction Using Voice Activity Projection",
@@ -213,3 +314,22 @@ https://www.openslr.org/17/
   year={2018}
 }
 ```
+
+
+### Switchboard
+
+```
+@inproceedings{godfrey1992switchboard,
+  title={SWITCHBOARD: Telephone speech corpus for research and development},
+  author={Godfrey, John J and Holliman, Edward C and McDaniel, Jane},
+  booktitle={Acoustics, speech, and signal processing, ieee international conference on},
+  volume={1},
+  pages={517--520},
+  year={1992},
+  organization={IEEE Computer Society}
+}
+```
+
+
+
+
