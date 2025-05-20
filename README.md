@@ -1,6 +1,11 @@
-# Robust Multimodal Turn-taking in Noise
+# Multimodal Turn-taking 
 
-This repository contains the code for INTERSPEECH 2025 submission *Visual Cues Support Robust Turn-taking Prediction in Noise* Anonymous Authors. 
+This repository contains the code for the following two papers:
+
+- INTERSPEECH 2025 *Visual Cues Support Robust Turn-taking Prediction in Noise* O'Connor Russell, Sam and Harte, Naomi
+- ACL 2025 *Visual Cues Enhance Predictive Turn-taing for Two-Party Human Interaction* O'Connor Russell, Sam and Harte, Naomi
+
+# INTERSPEECH 2025
 
 The following corpora are required for training and evaluation
 - Candor corpus 
@@ -50,17 +55,17 @@ The sample code opens these models and loads in the pre-trained weights. It is s
 Our sample code can run the above models on clean speech or 0dB speech, babble and music noise provided in sample data. 
 
 ```
-python sample.py --model MODEL --audio AUDIO --start_time XXX --end_time YYY
+python interspeech_sample.py --model MODEL --audio AUDIO --start_time XXX --end_time YYY
 ```
 
 Where audio is `clean`, `babble`, `speech` or `music`
 
-The sample code obtains predictions for the Candor scenario in `sample_data` (unused during training) and produces traces of the model predictions in the range `start_time`, `end_time`, as shown below. 
+The sample code obtains predictions for the Candor scenario in `sample_data_models` (unused during training) and produces traces of the model predictions in the range `start_time`, `end_time`, as shown below. 
 
 E.g. 
 
 ```
-python sample.py --model clean_audio_clean_alignment/audio_only --audio clean --start_time 959 --end_time 968 
+python interspeech_sample.py --model clean_audio_clean_alignment/audio_only --audio clean --start_time 959 --end_time 968 
 ```
 
 note the session was not seen by any model during training.
@@ -105,26 +110,13 @@ Sample results on the Candor corpus: multimodal left (ours), audio-only right (V
 <img src="images/vap.png" alt="drawing" width="400"/>
 
 
-
-
 ## Data preparation and Training 
 
 Code for adding the noise is available in `noise_generation`. The code requires LRS3 and MUSAN corpora. 
 
 due to licencing restrictions, we cannot share the corpora (`turn-taking-projects` directory). If you have access to these corpora, training and validation sessions splits in `data_management/data_manager/assets/folds` and training can be run in `turn_taking/training/training_scripts_multimodal.py`. Full instructions will be provided at a later stage. 
 
-We have made all training and data preparation code available for use if you have independent licences to Candor corpora follow the following steps: 
-
-coming soon...
-
-<!-- 1. Convert all files to wav and resample to 16 kHz
-2. Unzip all Candor 
-
-
-Feature extraction 
-Openface docker image -- we have packaged code to make this easy to run 
-
-If you have access to the corpora, proceed as follows...  -->
+We have made all training and data preparation code available for use if you have independent licences to Candor corpora.
 
 ## References
 
