@@ -1,0 +1,251 @@
+Fold,Event,corpus,f1,bal_acc
+1,Shift/Hold future,SWB-GT,0.87,0.67
+2,Shift/Hold future,SWB-GT,0.88,0.68
+3,Shift/Hold future,SWB-GT,0.88,0.69
+4,Shift/Hold future,SWB-GT,0.86,0.65
+5,Shift/Hold future,SWB-GT,0.87,0.69
+1,Shift/Hold now,SWB-GT,0.86,0.64
+2,Shift/Hold now,SWB-GT,0.86,0.65
+3,Shift/Hold now,SWB-GT,0.86,0.66
+4,Shift/Hold now,SWB-GT,0.85,0.62
+5,Shift/Hold now,SWB-GT,0.86,0.65
+1,S-pred future ,SWB-GT,0.66,0.66
+2,S-pred future ,SWB-GT,0.70,0.70
+3,S-pred future ,SWB-GT,0.70,0.71
+4,S-pred future ,SWB-GT,0.65,0.65
+5,S-pred future ,SWB-GT,0.68,0.68
+1,S-pred now,SWB-GT,0.75,0.75
+2,S-pred now,SWB-GT,0.79,0.79
+3,S-pred now,SWB-GT,0.78,0.78
+4,S-pred now,SWB-GT,0.74,0.74
+5,S-pred now,SWB-GT,0.76,0.76
+1,backchannel,SWB-GT,0.69,0.65
+2,backchannel,SWB-GT,0.69,0.65
+3,backchannel,SWB-GT,0.70,0.65
+4,backchannel,SWB-GT,0.71,0.66
+5,backchannel,SWB-GT,0.69,0.64
+1,short/long,SWB-GT,0.69,0.59
+2,short/long,SWB-GT,0.66,0.56
+3,short/long,SWB-GT,0.67,0.60
+4,short/long,SWB-GT,0.72,0.65
+5,short/long,SWB-GT,0.65,0.55
+1,overlaps_after future,SWB-GT,0.72,0.70
+2,overlaps_after future,SWB-GT,0.72,0.70
+3,overlaps_after future,SWB-GT,0.72,0.71
+4,overlaps_after future,SWB-GT,0.70,0.68
+5,overlaps_after future,SWB-GT,0.71,0.69
+1,overlaps_after now,SWB-GT,0.67,0.64
+2,overlaps_after now,SWB-GT,0.68,0.66
+3,overlaps_after now,SWB-GT,0.67,0.65
+4,overlaps_after now,SWB-GT,0.67,0.65
+5,overlaps_after now,SWB-GT,0.68,0.66
+1,overlaps_before future,SWB-GT,0.64,0.62
+2,overlaps_before future,SWB-GT,0.66,0.64
+3,overlaps_before future,SWB-GT,0.67,0.64
+4,overlaps_before future,SWB-GT,0.62,0.60
+5,overlaps_before future,SWB-GT,0.64,0.62
+1,overlaps_before now,SWB-GT,0.60,0.58
+2,overlaps_before now,SWB-GT,0.60,0.57
+3,overlaps_before now,SWB-GT,0.62,0.59
+4,overlaps_before now,SWB-GT,0.59,0.57
+5,overlaps_before now,SWB-GT,0.62,0.60
+1,Shift/Hold future,SWB-ASR,0.80,0.63
+2,Shift/Hold future,SWB-ASR,0.82,0.68
+3,Shift/Hold future,SWB-ASR,0.81,0.66
+4,Shift/Hold future,SWB-ASR,0.79,0.62
+5,Shift/Hold future,SWB-ASR,0.81,0.65
+1,Shift/Hold now,SWB-ASR,0.79,0.63
+2,Shift/Hold now,SWB-ASR,0.79,0.64
+3,Shift/Hold now,SWB-ASR,0.79,0.61
+4,Shift/Hold now,SWB-ASR,0.77,0.59
+5,Shift/Hold now,SWB-ASR,0.79,0.63
+1,S-pred future ,SWB-ASR,0.72,0.72
+2,S-pred future ,SWB-ASR,0.73,0.73
+3,S-pred future ,SWB-ASR,0.73,0.73
+4,S-pred future ,SWB-ASR,0.70,0.70
+5,S-pred future ,SWB-ASR,0.72,0.72
+1,S-pred now,SWB-ASR,0.76,0.75
+2,S-pred now,SWB-ASR,0.78,0.78
+3,S-pred now,SWB-ASR,0.79,0.79
+4,S-pred now,SWB-ASR,0.75,0.75
+5,S-pred now,SWB-ASR,0.75,0.75
+1,backchannel,SWB-ASR,0.73,0.73
+2,backchannel,SWB-ASR,0.75,0.75
+3,backchannel,SWB-ASR,0.73,0.73
+4,backchannel,SWB-ASR,0.76,0.76
+5,backchannel,SWB-ASR,0.72,0.72
+1,short/long,SWB-ASR,0.73,0.74
+2,short/long,SWB-ASR,0.75,0.75
+3,short/long,SWB-ASR,0.75,0.76
+4,short/long,SWB-ASR,0.77,0.77
+5,short/long,SWB-ASR,0.68,0.69
+1,overlaps_after future,SWB-ASR,0.67,0.67
+2,overlaps_after future,SWB-ASR,0.69,0.69
+3,overlaps_after future,SWB-ASR,0.69,0.69
+4,overlaps_after future,SWB-ASR,0.64,0.64
+5,overlaps_after future,SWB-ASR,0.67,0.66
+1,overlaps_after now,SWB-ASR,0.53,0.55
+2,overlaps_after now,SWB-ASR,0.53,0.55
+3,overlaps_after now,SWB-ASR,0.54,0.55
+4,overlaps_after now,SWB-ASR,0.52,0.51
+5,overlaps_after now,SWB-ASR,0.53,0.51
+1,overlaps_before future,SWB-ASR,0.60,0.61
+2,overlaps_before future,SWB-ASR,0.62,0.61
+3,overlaps_before future,SWB-ASR,0.63,0.63
+4,overlaps_before future,SWB-ASR,0.62,0.61
+5,overlaps_before future,SWB-ASR,0.62,0.62
+1,overlaps_before now,SWB-ASR,0.53,0.51
+2,overlaps_before now,SWB-ASR,0.55,0.52
+3,overlaps_before now,SWB-ASR,0.54,0.53
+4,overlaps_before now,SWB-ASR,0.55,0.53
+5,overlaps_before now,SWB-ASR,0.53,0.51
+1,Shift/Hold future,CND,0.81,0.76
+2,Shift/Hold future,CND,0.79,0.75
+3,Shift/Hold future,CND,0.80,0.76
+4,Shift/Hold future,CND,0.81,0.76
+5,Shift/Hold future,CND,0.80,0.76
+1,Shift/Hold now,CND,0.78,0.73
+2,Shift/Hold now,CND,0.78,0.73
+3,Shift/Hold now,CND,0.78,0.73
+4,Shift/Hold now,CND,0.78,0.73
+5,Shift/Hold now,CND,0.78,0.73
+1,S-pred future ,CND,0.83,0.83
+2,S-pred future ,CND,0.82,0.82
+3,S-pred future ,CND,0.83,0.83
+4,S-pred future ,CND,0.83,0.83
+5,S-pred future ,CND,0.83,0.82
+1,S-pred now,CND,0.81,0.81
+2,S-pred now,CND,0.81,0.81
+3,S-pred now,CND,0.81,0.81
+4,S-pred now,CND,0.80,0.80
+5,S-pred now,CND,0.80,0.80
+1,backchannel,CND,0.74,0.75
+2,backchannel,CND,0.74,0.74
+3,backchannel,CND,0.72,0.73
+4,backchannel,CND,0.71,0.70
+5,backchannel,CND,0.72,0.72
+1,short/long,CND,0.66,0.64
+2,short/long,CND,0.65,0.62
+3,short/long,CND,0.61,0.59
+4,short/long,CND,0.61,0.59
+5,short/long,CND,0.64,0.62
+1,overlaps_after future,CND,0.81,0.75
+2,overlaps_after future,CND,0.79,0.74
+3,overlaps_after future,CND,0.81,0.75
+4,overlaps_after future,CND,0.81,0.76
+5,overlaps_after future,CND,0.80,0.74
+1,overlaps_after now,CND,0.72,0.63
+2,overlaps_after now,CND,0.71,0.61
+3,overlaps_after now,CND,0.72,0.64
+4,overlaps_after now,CND,0.72,0.64
+5,overlaps_after now,CND,0.72,0.63
+1,overlaps_before future,CND,0.76,0.69
+2,overlaps_before future,CND,0.75,0.67
+3,overlaps_before future,CND,0.76,0.70
+4,overlaps_before future,CND,0.76,0.69
+5,overlaps_before future,CND,0.76,0.68
+1,overlaps_before now,CND,0.66,0.57
+2,overlaps_before now,CND,0.66,0.57
+3,overlaps_before now,CND,0.68,0.59
+4,overlaps_before now,CND,0.67,0.58
+5,overlaps_before now,CND,0.66,0.57
+1,Shift/Hold future,SWB_ASR-->CND,0.70,0.63
+2,Shift/Hold future,SWB_ASR-->CND,0.69,0.63
+3,Shift/Hold future,SWB_ASR-->CND,0.68,0.61
+4,Shift/Hold future,SWB_ASR-->CND,0.70,0.63
+5,Shift/Hold future,SWB_ASR-->CND,0.70,0.63
+1,Shift/Hold now,SWB_ASR-->CND,0.71,0.64
+2,Shift/Hold now,SWB_ASR-->CND,0.69,0.63
+3,Shift/Hold now,SWB_ASR-->CND,0.69,0.62
+4,Shift/Hold now,SWB_ASR-->CND,0.70,0.64
+5,Shift/Hold now,SWB_ASR-->CND,0.70,0.64
+1,S-pred future ,SWB_ASR-->CND,0.67,0.66
+2,S-pred future ,SWB_ASR-->CND,0.65,0.65
+3,S-pred future ,SWB_ASR-->CND,0.66,0.66
+4,S-pred future ,SWB_ASR-->CND,0.67,0.67
+5,S-pred future ,SWB_ASR-->CND,0.67,0.67
+1,S-pred now,SWB_ASR-->CND,0.73,0.73
+2,S-pred now,SWB_ASR-->CND,0.72,0.72
+3,S-pred now,SWB_ASR-->CND,0.72,0.72
+4,S-pred now,SWB_ASR-->CND,0.72,0.71
+5,S-pred now,SWB_ASR-->CND,0.73,0.73
+1,backchannel,SWB_ASR-->CND,0.72,0.70
+2,backchannel,SWB_ASR-->CND,0.70,0.69
+3,backchannel,SWB_ASR-->CND,0.72,0.69
+4,backchannel,SWB_ASR-->CND,0.69,0.66
+5,backchannel,SWB_ASR-->CND,0.68,0.64
+1,short/long,SWB_ASR-->CND,0.65,0.64
+2,short/long,SWB_ASR-->CND,0.57,0.55
+3,short/long,SWB_ASR-->CND,0.61,0.60
+4,short/long,SWB_ASR-->CND,0.56,0.54
+5,short/long,SWB_ASR-->CND,0.58,0.56
+1,overlaps_after future,SWB_ASR-->CND,0.69,0.60
+2,overlaps_after future,SWB_ASR-->CND,0.68,0.60
+3,overlaps_after future,SWB_ASR-->CND,0.66,0.56
+4,overlaps_after future,SWB_ASR-->CND,0.69,0.60
+5,overlaps_after future,SWB_ASR-->CND,0.67,0.57
+1,overlaps_after now,SWB_ASR-->CND,0.64,0.54
+2,overlaps_after now,SWB_ASR-->CND,0.65,0.56
+3,overlaps_after now,SWB_ASR-->CND,0.64,0.54
+4,overlaps_after now,SWB_ASR-->CND,0.64,0.54
+5,overlaps_after now,SWB_ASR-->CND,0.64,0.54
+1,overlaps_before future,SWB_ASR-->CND,0.69,0.60
+2,overlaps_before future,SWB_ASR-->CND,0.69,0.61
+3,overlaps_before future,SWB_ASR-->CND,0.66,0.56
+4,overlaps_before future,SWB_ASR-->CND,0.68,0.59
+5,overlaps_before future,SWB_ASR-->CND,0.68,0.59
+1,overlaps_before now,SWB_ASR-->CND,0.64,0.54
+2,overlaps_before now,SWB_ASR-->CND,0.65,0.55
+3,overlaps_before now,SWB_ASR-->CND,0.63,0.54
+4,overlaps_before now,SWB_ASR-->CND,0.64,0.54
+5,overlaps_before now,SWB_ASR-->CND,0.64,0.54
+1,Shift/Hold future,CND-->SWB_ASR,0.77,0.57
+2,Shift/Hold future,CND-->SWB_ASR,0.76,0.57
+3,Shift/Hold future,CND-->SWB_ASR,0.75,0.55
+4,Shift/Hold future,CND-->SWB_ASR,0.76,0.56
+5,Shift/Hold future,CND-->SWB_ASR,0.77,0.58
+1,Shift/Hold now,CND-->SWB_ASR,0.74,0.53
+2,Shift/Hold now,CND-->SWB_ASR,0.73,0.52
+3,Shift/Hold now,CND-->SWB_ASR,0.73,0.51
+4,Shift/Hold now,CND-->SWB_ASR,0.73,0.53
+5,Shift/Hold now,CND-->SWB_ASR,0.74,0.54
+1,S-pred future ,CND-->SWB_ASR,0.59,0.60
+2,S-pred future ,CND-->SWB_ASR,0.57,0.58
+3,S-pred future ,CND-->SWB_ASR,0.58,0.58
+4,S-pred future ,CND-->SWB_ASR,0.55,0.56
+5,S-pred future ,CND-->SWB_ASR,0.59,0.59
+1,S-pred now,CND-->SWB_ASR,0.56,0.57
+2,S-pred now,CND-->SWB_ASR,0.53,0.55
+3,S-pred now,CND-->SWB_ASR,0.53,0.55
+4,S-pred now,CND-->SWB_ASR,0.54,0.56
+5,S-pred now,CND-->SWB_ASR,0.56,0.58
+1,backchannel,CND-->SWB_ASR,0.67,0.67
+2,backchannel,CND-->SWB_ASR,0.63,0.65
+3,backchannel,CND-->SWB_ASR,0.66,0.66
+4,backchannel,CND-->SWB_ASR,0.61,0.62
+5,backchannel,CND-->SWB_ASR,0.66,0.65
+1,short/long,CND-->SWB_ASR,0.75,0.75
+2,short/long,CND-->SWB_ASR,0.68,0.69
+3,short/long,CND-->SWB_ASR,0.76,0.77
+4,short/long,CND-->SWB_ASR,0.70,0.70
+5,short/long,CND-->SWB_ASR,0.74,0.75
+1,overlaps_after future,CND-->SWB_ASR,0.56,0.59
+2,overlaps_after future,CND-->SWB_ASR,0.56,0.57
+3,overlaps_after future,CND-->SWB_ASR,0.54,0.56
+4,overlaps_after future,CND-->SWB_ASR,0.53,0.51
+5,overlaps_after future,CND-->SWB_ASR,0.56,0.55
+1,overlaps_after now,CND-->SWB_ASR,0.48,0.48
+2,overlaps_after now,CND-->SWB_ASR,0.43,0.48
+3,overlaps_after now,CND-->SWB_ASR,0.46,0.45
+4,overlaps_after now,CND-->SWB_ASR,0.45,0.44
+5,overlaps_after now,CND-->SWB_ASR,0.48,0.49
+1,overlaps_before future,CND-->SWB_ASR,0.54,0.54
+2,overlaps_before future,CND-->SWB_ASR,0.53,0.52
+3,overlaps_before future,CND-->SWB_ASR,0.51,0.49
+4,overlaps_before future,CND-->SWB_ASR,0.54,0.52
+5,overlaps_before future,CND-->SWB_ASR,0.52,0.50
+1,overlaps_before now,CND-->SWB_ASR,0.50,0.48
+2,overlaps_before now,CND-->SWB_ASR,0.49,0.48
+3,overlaps_before now,CND-->SWB_ASR,0.49,0.47
+4,overlaps_before now,CND-->SWB_ASR,0.51,0.49
+5,overlaps_before now,CND-->SWB_ASR,0.50,0.48
