@@ -190,18 +190,12 @@ Hard-drive requirements:
 
 ## Models
 
-Sample results on the Candor corpus: multimodal left (ours), audio-only right (VAP)
-<!-- ![alt text](turn_taking_acl/results/750ms_hold_shift_pred.png "Candor Multimodal (Ours)") -->
-<img src="turn_taking_acl/results/750ms_hold_shift_pred.png" alt="drawing" width="700"/>
-
-
 `turn_taking_acl/results` contain F1 and balanced accuracy for each fold of Candor and Switchboard
 
 #### Training objective 
 
 <!-- ![alt text](images/vap.png "Candor Multimodal (Ours)") -->
 <img src="images/vap.png" alt="drawing" width="400"/>
-
 
 #### Multimodal turn-taking 
 
@@ -214,8 +208,9 @@ We have made all training and data preparation code available for use if you hav
 
 ## References
 
+Please cite the following publications:
+
 ### Our submission 
-Please cite the following publication:
 
 ```
 @inproceedings{anon_authors_2025,
@@ -232,7 +227,7 @@ Please cite the following publication:
 
 ```
 
-### VAP Model
+### The VAP Model
 
 Stereo VAP Model (as used here)
 ```
@@ -274,7 +269,6 @@ Original Mono VAP Model, for reference
 
 Elements of this repository are reproduced from the codebase (MIT Licence) 
 ```https://github.com/ErikEkstedt/VoiceActivityProjection```
-
 
 ### Candor
 
