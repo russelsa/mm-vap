@@ -168,7 +168,7 @@ We have included five sample models in `sample_trained_models`. Each model is th
 The sample code opens these models and loads in the pre-trained weights. 
 
 ```
-python sample.py --model MODEL --start_time XXX --end_time YYY
+python acl_sample.py --model MODEL --start_time XXX --end_time YYY
 ```
 
 The sample code obtains predictions for the Candor scenario in `sample_data` (unused during training) and produces traces of the model predictions in the range `start_time`, `end_time`, as shown below. 
