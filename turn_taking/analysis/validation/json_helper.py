@@ -76,8 +76,8 @@ print(df.columns)
 # df=df[~df['corpus'].str.contains('combined')]
 # df = df.groupby(['kind','metric', 'corpus']).mean().reset_index(drop=False)
 print(set(df.metric))
-df = df[(df.metric.isin(['shift_hold_p_future_before', 'gap_0_p_future', 'gap_500_p_future', 'gap_750_p_future', 'gap_1000_p_future', 'gap_1250_p_future', 'gap_1500_p_future']))]
-df['metric'] = df['metric'].replace({"shift_hold_p_future_before": "gap_250"})
+df = df[(df.metric.isin(['shift_hold_p_future_after', 'shift_hold_p_future_before']))] #, 'gap_0_p_future', 'gap_500_p_future', 'gap_750_p_future', 'gap_1000_p_future', 'gap_1250_p_future', 'gap_1500_p_future']))]
+# df['metric'] = df['metric'].replace({"shift_hold_p_future_before": "gap_250"})
 df.to_csv("turn_taking/results/f1_bal_acc_timings.csv")
 
 # # do ttests 
